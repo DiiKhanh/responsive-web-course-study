@@ -1,0 +1,20 @@
+.center {
+  &__text {
+    text-align: center;
+
+    h5 {
+      color: $main-color;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: $h2-font;
+      text-transform: capitalize;
+      line-height: 1.2;
+    }
+  }
+}

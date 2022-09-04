@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.8em 2.4em;
+  background: $main-color;
+  border-radius: 20px;
+  color: $bg-color;
+  font-weight: bold;
+  transition: $smooth;
+  text-transform: capitalize;
+  outline: none;
+
+  &:hover {
+    transform: scale(0.95) translateY(-10px);
+  }
+}

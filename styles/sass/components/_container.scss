@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+    padding: 20px 30px;
+    box-shadow: -11.729px -11.729px 32px rgb(255 255 255 / 15%);
+    transition: $smooth;
+
+    &:hover {
+      transform: translateY(-15px);
+      border-color: $main-color;
+    }
+    &:hover h4 {
+      color: $main-color;
+    }
+  }
+
+  &__text {
+    h4 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      transition: $smooth;
+    }
+
+    p {
+      color: $second-color;
+      font-size: $p-font;
+      font-weight: 500;
+    }
+  }
+}

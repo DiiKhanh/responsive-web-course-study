@@ -1,0 +1,89 @@
+.courses {
+  background: url(../../img/background.png);
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 2rem;
+    margin-top: 5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  &__box {
+    background: $bg-color;
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+    transition: $smooth;
+
+    &:hover {
+      transform: translateY(-15px);
+    }
+
+    &:hover h3 {
+      color: $main-color;
+    }
+    img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 15px 15px 0px 0px;
+    }
+  }
+  &__text {
+    padding: 35px 20px;
+    h5 {
+      color: $main-color;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      margin: 15px 0;
+      transition: $smooth;
+    }
+    h6 {
+      color: #696969;
+      font-size: $p-font;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    &-rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__star {
+    i {
+      color: $main-color;
+      margin-right: 2px;
+      font-size: 17px;
+    }
+  }
+
+  &__review {
+    p {
+      font-size: $p-font;
+      font-weight: 400;
+      color: $second-color;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__btn {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 17px;
+  }
+}

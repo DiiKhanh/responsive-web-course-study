@@ -1,0 +1,13 @@
+$tab-pc: 1350px;
+$mobile: 960px;
+@mixin tab-pc {
+  @media (max-width: #{$tab-pc}) {
+    @content;
+  }
+}
+
+@mixin mobiles {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}

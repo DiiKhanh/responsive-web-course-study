@@ -1,0 +1,70 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../../img/background.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+
+  &__content {
+    h1 {
+      font-size: $big-font;
+      margin: 15px 0;
+    }
+    h6 {
+      color: $main-color;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    p {
+      color: $second-color;
+      font-size: $p-font;
+      font-weight: 500;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__latter {
+    form {
+      width: 100%;
+      max-width: 460px;
+      position: relative;
+
+      input {
+        &:first-child {
+          display: inline-block;
+          width: 100%;
+          outline: none;
+          padding: 16px 140px 16px 15px;
+          border: 2px solid $main-color;
+          border-radius: 30px;
+        }
+
+        &:last-child {
+          display: inline-block;
+          position: absolute;
+          outline: none;
+          border: none;
+          border-radius: 30px;
+          padding: 16px 40px;
+          color: $bg-color;
+          background: $main-color;
+          top: 2px;
+          right: 1px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__img {
+    img {
+      height: auto;
+    }
+  }
+}

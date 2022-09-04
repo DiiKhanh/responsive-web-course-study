@@ -1,0 +1,28 @@
+.last-text {
+  text-align: center;
+  p {
+    color: $second-color;
+    font-size: $p-font;
+    margin-bottom: 20px;
+  }
+}
+
+.backtop {
+  background: $main-color;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $bg-color;
+  padding: 10px;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: none;
+  i {
+    font-size: 20px;
+  }
+
+  &.showback {
+    display: initial;
+  }
+}

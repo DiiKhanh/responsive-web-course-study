@@ -1,0 +1,17 @@
+.cta {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  &__img {
+    img {
+      height: auto;
+      width: auto;
+    }
+  }
+}
